@@ -21,3 +21,6 @@ RUN if [ "${NODE_VERSION}" != "none" ]; then su vscode -c "umask 0002 && . /usr/
 # RUN su vscode -c "source /usr/local/share/nvm/nvm.sh && npm install -g <your-package-here>" 2>&1
 
 COPY post_install.sh /usr/local/bin/post_install.sh
+
+# Supress pip upgrade warning
+ENV PIP_DISABLE_PIP_VERSION_CHECK=1
