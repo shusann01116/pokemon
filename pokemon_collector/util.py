@@ -1,3 +1,4 @@
+# pylint: disable=C0114
 import bs4
 import requests
 from pokemon_collector import core
