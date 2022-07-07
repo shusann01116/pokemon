@@ -18,5 +18,7 @@ curl -sfL https://github.com/cue-lang/cue/releases/download/"${LATEST_TAG}"/cue_
 LATEST_TAG=$(get_latest_tag https://github.com/dagger/dagger.git)
 curl -sfL https://github.com/dagger/dagger/releases/download/"${LATEST_TAG}"/dagger_"${LATEST_TAG}"_linux_amd64.tar.gz | sudo tar xzf - -C /usr/local/bin
 
-# pip
-pip install -r "$(pwd)"/requirements.txt
+# Install this package as editable
+pip install --editable .
+
+pip install pytest build
