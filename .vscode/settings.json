@@ -1,0 +1,8 @@
+{
+    "python.linting.pylintEnabled": true,
+    "python.linting.prospectorEnabled": false,
+    "python.linting.enabled": true,
+    "python.formatting.provider": "black",
+    "python.analysis.inlayHints.functionReturnTypes": false,
+    "python.analysis.inlayHints.variableTypes": false
+}
